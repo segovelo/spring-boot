@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 /**
  * 14 May 2021 23:21:27 @Javadoc TODO
  *
- * @author Sebastian Vergara Losada *
+ * @author Segovelo *
  */
 @SpringBootApplication
 public class Application {
