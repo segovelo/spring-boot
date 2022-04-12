@@ -15,7 +15,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 /**
  * 14 May 2021 23:26:13 @Javadoc TODO
  *
- * @author Sebastian Vergara Losada *
+ * @author Segovelo *
  */
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -25,8 +25,8 @@ public class HelloControllerTest {
 
   @Test
   public void getHello() throws Exception {
-    mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
+    mvc.perform(MockMvcRequestBuilders.get("/get-greetings").accept(MediaType.APPLICATION_JSON))
         .andExpect(status().isOk())
-        .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
+        .andExpect(content().string(equalTo("Hello !!! **** Greetings from Spring Boot! ****")));
   }
 }

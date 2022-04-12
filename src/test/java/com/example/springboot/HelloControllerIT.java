@@ -27,12 +27,13 @@ public class HelloControllerIT {
 
   @BeforeEach
   public void setUp() throws Exception {
-    this.base = new URL("http://localhost:" + port + "/");
+    this.base = new URL("http://localhost:" + port);
   }
 
   @Test
-  public void getHello() throws Exception {
-    ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
-    assertThat(response.getBody()).isEqualTo("Greetings from Spring Boot!");
+  public void getGreetings() throws Exception {
+    String fullURL = base.toString() + "/get-greetings";
+    ResponseEntity<String> response = template.getForEntity(fullURL, String.class);
+    assertThat(response.getBody()).isEqualTo("Hello !!! **** Greetings from Spring Boot! ****");
   }
 }
