@@ -14,7 +14,7 @@ import org.springframework.web.reactive.function.client.WebClient.UriSpec;
 /**
  * 14 May 2021 23:21:27 @Javadoc TODO
  *
- * @author Sebastian Vergara Losada *
+ * @author Segovelo *
  */
 @RestController
 public class HelloController {
