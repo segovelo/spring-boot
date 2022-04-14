@@ -40,7 +40,7 @@ public class HelloController {
 
     UriSpec<RequestBodySpec> uriSpec = client.method(HttpMethod.GET);
     RequestBodySpec bodySpec = uriSpec.uri("/fakeData");
-    // System.out.println("\n\n\t  Full URL : " +  client.uri());
+    System.out.println("\n\n\t  Full URL : " +  client.toString());
     return response;
   }
 }
